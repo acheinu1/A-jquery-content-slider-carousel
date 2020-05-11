@@ -4,6 +4,8 @@
 }
 
 body{
+    margin: 0px;
+    padding: 0px;
     font-family: Arial;
     color: white;
     background-color: rgb(58, 57, 57);

@@ -17,7 +17,7 @@ $(document).ready(function (){
     $("#next") .on("click",function(){
 
         //this is to set the previous page to old
-        $(".active") .removeClass(".active") .addClass("oldActive");
+        $(".active") .removeClass("active") .addClass("oldActive");
         if($(".oldActive") .is(":last-child")){
 
         // when the last(5) is out we want first(1) as the next slide
@@ -26,7 +26,7 @@ $(document).ready(function (){
         else{
         $(".oldActive").next().addClass("active");
         }
-        $(".oldActive") .removeClass(".oldActive");
+        $(".oldActive") .removeClass("oldActive");
         $(".slide").fadeOut(speed)
         $(".active").fadeIn(speed)
     })
@@ -34,7 +34,7 @@ $(document).ready(function (){
     // the previous button
     $("#prev") .on("click",function(){
         
-        $(".active") .removeClass(".active") .addClass("oldActive");
+        $(".active") .removeClass("active") .addClass("oldActive");
         if($(".oldActive") .is(":first-child")){
 
         
@@ -43,7 +43,7 @@ $(document).ready(function (){
         else{
         $(".oldActive").prev().addClass("active");
         }
-        $(".oldActive") .removeClass(".oldActive");
+        $(".oldActive") .removeClass("oldActive");
         $(".slide").fadeOut(speed)
         $(".active").fadeIn(speed)
     })
